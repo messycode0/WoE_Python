@@ -1,11 +1,12 @@
-from settings import clrscn
+from misc import clrscn
+
 def parse(file_gsf):
     gsf = open(file_gsf, "r")
 
     line_array = ["0_buff"]
     for line in gsf:
         print(line)
-        line_array.append(line)
+        line_array.append(line.splitlines())
         print(line_array)
         pass
 
